@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', 'Ubuntu', serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*SITE NAVIGATION*/
+
+.site-navigation {
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-navigation-list {
+    font-size: 0px;
+    list-style: none;
+    padding: 72px 166px 100px 166px;
+    text-align: left;
+}
+
+.site-navigation li {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 104px;
+}
+
+.site-navigation-list a {
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+}
+
+/*MAIN CONTENT*/
+
+.main-content {
+    width: 900px;
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-content-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-content li {
+    display: inline-block;
+    margin-right: 60px;
+    list-style: none;
+}
+
+.main-content-list-item {
+    width: 420px;
+    font-size: 14px;
+    margin-top: 130px;
+}
+
+.main-content-list-item:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.main-content-list-item:nth-child(-n+2) {
+    margin-top: 0px;
+}
+
+.item-description {
+    font-size: 14px;
+}
+
+.item-theme {
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    line-height: 17px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.item-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #626262;
+}
+
+/*FOOTER*/
+
+.page-footer {
+    font-size: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer-button {
+    border: none;
+    border-style: solid;
+    border-color: #626262;
+    border-width: 1px;
+    margin-top: 52px;
+    margin-bottom: 70px;
+    padding: 20px 34px;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    cursor: pointer;
+
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hiden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
