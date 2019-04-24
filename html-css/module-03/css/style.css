@@ -36,8 +36,8 @@ img {
 .site-navigation-list {
     font-size: 0px;
     list-style: none;
-    padding: 72px 166px 100px 166px;
-    text-align: left;
+    padding: 72px 0px 100px 0px;
+    text-align: center;
 }
 
 .site-navigation li {
@@ -92,12 +92,14 @@ img {
     margin-top: 0px;
 }
 
-.item-description {
-    font-size: 14px;
+.item-img {
+    margin-bottom: 30px;
 }
 
 .item-theme {
     font-size: 14px;
+    margin: 0px;
+    margin-bottom: 24px;
     font-family: 'Ubuntu';
     line-height: 17px;
     color: #b4ad9e;
@@ -106,20 +108,25 @@ img {
 }
 
 .item-title {
+    margin: 0px;
+    margin-bottom: 32px;
     font-size: 30px;
     line-height: 36px;
     color: #626262;
 }
 
-/*FOOTER*/
+.item-description {
+    margin: 0px;
+    font-size: 14px;
+}
 
-.page-footer {
+.load-button {
     font-size: 0px;
     vertical-align: middle;
     text-align: center;
 }
 
-.footer-button {
+.page-button {
     border: none;
     border-style: solid;
     border-color: #626262;
@@ -132,7 +139,7 @@ img {
     line-height: 24px;
     color: #626262;
     cursor: pointer;
-
+   
 }
 
 .visually-hidden:not(:focus):not(:active),
