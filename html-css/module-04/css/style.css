@@ -12,8 +12,6 @@ body {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 26px;
-    /*width: 1600px;*/
-
 }
 
 img {
@@ -22,7 +20,7 @@ img {
     height: auto;
 }
 
-.clearfix::after{
+.clearfix::after {
     display: table;
     content: '';
     clear: both;
@@ -54,7 +52,7 @@ img {
     display: inline-block;
 }
 
-.site-logo::first-letter{
+.site-logo::first-letter {
     font-family: 'Roboto', serif;
     font-weight: 900;
     color: #1abc9c;
@@ -72,13 +70,13 @@ img {
     width: 476px;
 }
 
-.navigation-list a{
+.navigation-list a {
     text-transform: uppercase;
     text-decoration: none;
     color: #494242;
 }
 
-.navigation-list li:not(:last-child){
+.navigation-list li:not(:last-child) {
     margin-right: 32px;
 }
 
@@ -132,11 +130,11 @@ img {
     background-color: #1abc9c;
 }
 
-.product-list-item:hover .price{
+.product-list-item:hover .price {
     background-color: #7fd9c7;
 }
 
-.product-list-item img{
+.product-list-item img {
     width: 256px;
     height: 282px;
 }
@@ -177,23 +175,23 @@ img {
 
 /*NEWS SECTION*/
 
-.news-list{
+.news-list {
     margin: 0px;
     padding: 0px;
     list-style: none;
     margin-top: 82px;
-    
+
 }
 
-.news-list-item{
-    font-family: 'Open Sans',serif;
+.news-list-item {
+    font-family: 'Open Sans', serif;
     width: 350px;
     height: 496px;
     float: left;
     margin-left: 30px;
 }
 
-.news-title{
+.news-title {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -201,7 +199,7 @@ img {
     margin-top: 14px;
 }
 
-.news-title:after{
+.news-title:after {
     content: '';
     display: block;
     width: 136px;
@@ -215,10 +213,10 @@ img {
     line-height: 26px;
     margin-top: 30px;
     margin-bottom: 0px;
-    letter-spacing: -0.05ex;    
+    letter-spacing: -0.05ex;
 }
 
-.news-list button{
+.news-list button {
     border: 0px;
     width: 160px;
     height: 50px;
