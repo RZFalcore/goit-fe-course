@@ -1,0 +1,293 @@
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-slab-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v13-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v13-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v13-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+
+img {
+    max-width: 100%;
+}
+.container {
+    width: 940px;
+    margin: 0px auto;
+    padding: 0px;
+}
+/* PAGE HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+    position: relative;
+}
+
+.site-logo {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab' serif;
+    font-size: 26px;
+    line-height: 41px;
+    font-style: italic;
+    color: #fed136;
+    padding-top: 28px;
+}
+
+.site-nav{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 36px;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 41px;
+    position: absolute;
+    right: 0px;
+}
+
+.site-nav-item a{
+    text-decoration: none;
+    margin-left: 42px;
+}
+
+.site-nav-item a:hover{
+    color: #fed136;
+}
+/* SERVICE SECTION */
+.services {
+    text-align: center;
+}
+
+.services-title-wrap {
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.services-title-wrap h2{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.services-title-wrap p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
+}
+
+/* SERVICE LIST */
+
+.services-list{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 28px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.services-list-item{
+    width: 290px;
+    height: 230px;
+    text-align: center;
+    position: relative;
+}
+
+
+.circle{
+    border: 2px solid #fed136;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 108px; 
+} 
+
+.services-list-item img{
+    padding-top: 16px;
+}
+
+.services-list-item h3{
+    margin: 0px;
+    margin-top: 100px;
+    padding: 0px;
+    /* margin-bottom: 22px; */
+    font-family:'Montserrat', serif;
+    font-size: 18px;
+    line-height: 75px;
+}
+
+.services-list-item p {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+
+.contact-us{
+    margin-top: 110px;
+    padding-top: 104px;
+    background-color: #222222;
+    position: relative;
+}
+
+.services-title-wrap-two {
+    margin-bottom: 76px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services-title-wrap-two h2{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.services-title-wrap-two p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
+}
+/* FORM */
+.form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 210px;
+    position: relative;
+}
+
+
+.map-img {
+    position: absolute;
+    top: 104px;
+    padding-bottom: 20px;
+    right: 0px;
+    background-repeat: no-repeat;
+}
+
+.pers-info{
+    padding: 0px;
+    padding-right: 15px;
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pers-info input{
+    padding: 0px;
+    width: 452px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.pers-info input[type='email']:valid{
+    border-color: green;
+}
+.pers-info input[type='email']:invalid {
+    border-color:  red;
+}
+
+.pers-info input[type='name']:valid{
+    border-color: green;
+}
+.pers-info input[type='name']:invalid {
+    border-color:  red;
+}
+
+
+.pers-info ::placeholder{
+    padding-left: 20px;
+}
+
+.pers-text {
+    padding: 0px;
+    padding-left: 15px;
+    width: 453px;
+    height: 208px;
+}
+
+.pers-text textarea{
+    padding: 0px;
+    width: 453px;
+    height: 207px;
+    text-transform: uppercase;
+}
+
+.pers-info textarea[type='text']:valid{
+    border-color: green;
+}
+.pers-info textarea[type='text']:invalid {
+    border-color:  red;
+}
+
+.pers-text ::placeholder{
+    padding: 16px;
+}
+
+.down-button{
+    position: absolute;
+    top: 258px;
+}
+
+.down-button input{
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #fed136;
+}
+
