@@ -42,6 +42,7 @@ img {
 }
 
 .site-logo {
+    position: absolute;
     margin: 0px;
     padding: 0px;
     margin-top: 30px;
@@ -50,6 +51,7 @@ img {
     text-decoration: none;
     text-transform: none;
     font-weight: 700;
+    
 }
 
 .header-nav-list-item:hover  {
@@ -63,8 +65,8 @@ img {
 .site-logo:hover {
     display: block;
     content: '';
-    border-bottom: #f38181 solid 3px;
-    height: 38px;
+    border-bottom:  #f38181 solid 3px;
+    height: 36px;
 }
 
 .title{
@@ -307,7 +309,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     border-top: 2px solid #e5e5e5;
     font-family: 'Montserrat', serif;
