@@ -234,17 +234,17 @@ img {
     text-transform: uppercase;
 }
 
-.pers-info input[type='email']:valid{
+.form input[name='email']:valid{
     border-color: green;
 }
-.pers-info input[type='email']:invalid {
+.form input[type='email']:invalid {
     border-color:  red;
 }
 
-.pers-info input[type='name']:valid{
+.form input[name='name']:valid{
     border-color: green;
 }
-.pers-info input[type='name']:invalid {
+.form input[name='name']:invalid {
     border-color:  red;
 }
 
@@ -265,13 +265,15 @@ img {
     width: 453px;
     height: 207px;
     text-transform: uppercase;
+    resize: none;
 }
 
-.pers-info textarea[type='text']:valid{
+.form textarea[name="Message"]:valid{
     border-color: green;
 }
-.pers-info textarea[type='text']:invalid {
-    border-color:  red;
+
+.form textarea[name="Message"]:invalid{
+    border-color: red;
 }
 
 .pers-text ::placeholder{
