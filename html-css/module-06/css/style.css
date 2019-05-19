@@ -291,6 +291,8 @@ img {
 
 .photo-list-item-img:hover {
     transform: translate( -10px, -10px);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 }
 
 .photo-list-item-img:hover .gradient {
@@ -303,6 +305,8 @@ img {
 
 .img-hover-link:hover {
     background-color: #95e1d3;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 }
 
 .page-footer {
