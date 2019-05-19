@@ -1,0 +1,200 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav {
+    background-color: #000;
+    background-image: url(../img/Header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
+.partner  {
+    width: 220px;
+    text-align: center; 
+}
+
+.partner-img {
+    margin: 0px auto;
+    margin-bottom: 24px;
+    position: relative;
+    width: 126px;
+    height: 126px;
+}
+
+.partner h3 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.partner p {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+.icon {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.partner-button a{
+    display: block;
+    margin: 0px auto;
+    height: 40px;
+    width: 280px;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+/*  */
+@media(min-width: 320px) {
+    
+    header {
+        margin-bottom: 40px;
+    }
+
+    .nav-butt {
+        margin-top: 20px;
+        margin-bottom: 118px;
+    }
+
+    .logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .log-in, .sign-up {
+        text-decoration: none;
+        color: #fff;  
+        padding: 8px;    
+        width: 90px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 40px;
+    }
+
+    .log-in:hover {
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+    
+    .sign-up:hover {
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    .header-h {
+        padding: 0px;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .page-title-descr {
+        margin-bottom: 20px;
+    }
+
+    .page-title-descr p {
+        margin: 0px;
+        padding: 0px 10px;
+        
+    }
+
+    .header-button {
+        width: 280px;
+        height: 40px;
+        color: #fff;
+        background-color: #ff4e50;
+        border: 0;
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 138px;
+    }
+
+    .main-title{
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .partner-button  a{
+        width: 192px;
+    }
+   
+}
+
+@media(min-width: 748px) {
+    .nav {
+        background-image: url(../img/Header-image-768.png);
+    
+    }
+    
+    .nav-butt {
+        margin: 0px;
+        margin-top: 38px;
+        margin-bottom: 150px;
+        
+    }
+
+    .nav-logo {
+        margin-top: 50px;
+    }
+
+    .logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .header-h{
+        margin: 0px;
+        font-size: 50px;
+        margin-bottom: 38px;
+    }
+
+    .page-title-descr {
+        margin-bottom: 38px;
+    }
+
+    .header-p {
+        margin: 0px;
+    }
+
+    .header-button {
+        margin-bottom: 230px;
+    }
+
+    .main-title {
+        margin: 0px;
+    }
+
+    .partner {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(min-width: 942px) {
+    .nav {
+        background-image: url(../img/Header-image-1440.png);
+    }
+
+}
