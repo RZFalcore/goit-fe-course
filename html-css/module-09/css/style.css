@@ -54,6 +54,7 @@ img {
 .partner-button a{
     display: block;
     margin: 0px auto;
+    margin-bottom: 58px;
     height: 40px;
     width: 280px;
     color: #ff4e50;
@@ -189,6 +190,12 @@ img {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
+    .partner-button  a{
+        margin-bottom: 40px;
+    }
+   
+
 }
 
 
@@ -197,4 +204,9 @@ img {
         background-image: url(../img/Header-image-1440.png);
     }
 
-}
+    .partner-button  a{
+        margin-bottom: 74px;
+    }
+   
+
+}   
