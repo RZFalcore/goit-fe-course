@@ -82,6 +82,7 @@ img {
 .site-nav-item a{
     text-decoration: none;
     margin-left: 42px;
+    color: #333333;
 }
 
 .site-nav-item a:hover{
