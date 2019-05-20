@@ -14,11 +14,14 @@ img {
     display: flex;
     position: relative;
     margin-bottom: 130px;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .header-nav-list{    
     margin: 0px;
     padding: 0px;
+    padding-top: 40px;
     font-family: 'Montserrat', serif;   
     font-size: 14px;
     text-transform: uppercase; 
@@ -26,23 +29,24 @@ img {
     list-style: none;
     color: #c8eee7;
     display: flex;
-    position: absolute;
-    right:0px;
-    top: 40px;
-    
+    justify-content: space-between;
+    min-width: 540px;
 }
 
 
 .header-nav-list a {
     text-decoration: none;
     color: #c8eee7;
-    margin-left: 55px;
-    position: relative;
+    display: block;
     
+    
+}
+.work-with {
+    margin-bottom: 100px;
 }
 
 .site-logo {
-    position: absolute;
+    /* position: absolute; */
     margin: 0px;
     padding: 0px;
     margin-top: 30px;
@@ -75,9 +79,17 @@ img {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 66px;
+}
+
+.title p{
+    margin: 0px;
+    margin-bottom: 40px;
 }
 
 .kaushan-line{
+    margin: 0px;
+    margin-bottom: 18px;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333333;
@@ -98,8 +110,6 @@ img {
 
 .services-menu-list{
     margin: 0px;
-    margin-top: 66px;
-    margin-bottom: 94px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -278,6 +288,7 @@ img {
     align-items: center;
     outline: 1px solid #f38181;
 }
+
 
 .gradient {
     display: block;
