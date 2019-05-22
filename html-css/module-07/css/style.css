@@ -79,11 +79,16 @@ img {
     right: 0px;
 }
 
+.site-nav-item:not(:last-child){
+    margin-right: 42px;
+} 
+
 .site-nav-item a{
+    display: block;
     text-decoration: none;
-    margin-left: 42px;
     color: #333333;
 }
+
 
 .site-nav-item a:hover{
     color: #fed136;
@@ -91,6 +96,7 @@ img {
 /* SERVICE SECTION */
 .services {
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .services-title-wrap {
@@ -127,12 +133,12 @@ img {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    
 }
 
 .services-list-item{
     width: 290px;
-    height: 230px;
+    /* height: 230px; */
     text-align: center;
     position: relative;
 }
@@ -164,7 +170,6 @@ img {
 .services-list-item p {
     margin: 0px;
     padding: 0px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -210,14 +215,23 @@ img {
     position: relative;
 }
 
+.map {
+    width: 700px;
+    height: 542px;
+    background-image: url(../img/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 0px;
+}
 
-.map-img {
+/* .map-img {
     position: absolute;
     top: 104px;
     padding-bottom: 20px;
     right: 0px;
     background-repeat: no-repeat;
-}
+} */
 
 .pers-info{
     padding: 0px;
