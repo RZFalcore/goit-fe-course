@@ -70,9 +70,11 @@ img {
     font-weight: 700;
 }
 
+.header-nav-list-link:hover{
+    color: #f38181;
+}
 
 .header-nav-list-item:hover::after  {
-    color: #f38181;
     display: block;
     content: '';
     width: 100%;
