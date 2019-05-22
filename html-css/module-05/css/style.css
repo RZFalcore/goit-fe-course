@@ -74,6 +74,7 @@ img {
     line-height: 11px;
     margin: 0px;
     padding: 0px;
+    float: right;
     
 }
 
@@ -83,12 +84,17 @@ img {
     float: right;    
     padding-top: 42px;
     padding-bottom: 38px;
+    float: left;
 }
 
 .nav-menu-item a {
+    display: block;
     text-decoration: none; 
     color: #555252;
-    margin-left: 38px;
+}
+
+.nav-menu-item:not(:last-child){
+    margin-right: 38px;
 }
 
 .nav-menu-item a:hover,
@@ -194,6 +200,7 @@ img {
 .new-collection-list {
     margin: 0px;
     padding: 0px;
+    padding-bottom: 100px;
     list-style: none;
 }
 
@@ -206,7 +213,6 @@ img {
 
 .new-collection-list-item:not(:last-child){
     margin-right: 30px;
-    margin-bottom: 100px;
 }
 
 .list-item-price {
@@ -267,14 +273,25 @@ img {
     
 }
 
+.list-item-hover-links {
+    display: block;
+    position: relative;
+}
+
 .list-item-hover-icons {
     margin: 0px;
     padding: 0px;
     width: 170px;
     height: 110px;
-    position: relative;
-    top: 78px;
-    left: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.list-item-hover-icons button {
+    margin: 0px;
+    padding: 0px;
 }
 
 .like-icon {
@@ -304,8 +321,9 @@ img {
     left: 120px;
     top: 0px;
 }
-
+/*  */
 .add-to-cart {
+    border: 0px;
     outline: #ffffff solid 1px;
     width: 170px;
     height: 50px;
@@ -331,7 +349,7 @@ img {
     height: 50px;
     padding: 8px;
     position: absolute;
-    top: px;
+    top: 2px;
 }
 
 .new-collection-list-item:hover .list-item-hover{
