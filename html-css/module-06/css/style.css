@@ -31,49 +31,69 @@ img {
     display: flex;
     justify-content: space-between;
     min-width: 540px;
+    position: relative; 
 }
 
 
-.header-nav-list a {
+.header-nav-list-link {
     text-decoration: none;
     color: #c8eee7;
-    display: block;
-    
-    
+    display: block;       
 }
+
+.header-nav-list-item {
+    position: relative;
+}
+
+/* .header-nav-list-item:not(:last-child){
+    margin-right: 52px;
+} */
+
 .work-with {
     margin-bottom: 100px;
 }
 
-.site-logo {
-    /* position: absolute; */
+.site-logo{
+    position: relative;
     margin: 0px;
     padding: 0px;
     margin-top: 30px;
+}
+
+.site-logo-link {
+    margin: 0px;
+    padding: 0px;
     color: #95e1d3;
     font-size: 30px;
     text-decoration: none;
     text-transform: none;
     font-weight: 700;
-    
 }
 
-.header-nav-list-item:hover  {
+
+.header-nav-list-item:hover::after  {
     color: #f38181;
     display: block;
     content: '';
-    border-bottom: #f38181 solid 3px;
-    height: 26px;
+    width: 100%;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: 26px;
 }
 
-.site-logo:hover {
+.site-logo-link:hover::after {
     display: block;
     content: '';
-    border-bottom:  #f38181 solid 3px;
-    height: 36px;
+    width: 100%;
+    height: 3px;
+    background-color :#f38181;
+    position: absolute;
+    top: 40px;
 }
 
 .title{
+    margin: 0px;
     text-align: center;
     font-family: 'Montserrat', serif;
     font-size: 30px;
@@ -287,8 +307,32 @@ img {
     justify-content: center;
     align-items: center;
     outline: 1px solid #f38181;
+    
 }
 
+.link-1{
+    background-image: url(../img/socials-pict/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link-2 {
+    background-image: url(../img/socials-pict/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link-3 {
+    background-image: url(../img/socials-pict/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link-4 {
+    background-image: url(../img/socials-pict/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .gradient {
     display: block;
