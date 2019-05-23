@@ -96,7 +96,7 @@ img {
 /* SERVICE SECTION */
 .services {
     text-align: center;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .services-title-wrap {
@@ -176,10 +176,13 @@ img {
 /* CONTACT SECTION */
 
 .contact-us{
-    margin-top: 110px;
     padding-top: 104px;
+    padding-bottom: 118px;
     background-color: #222222;
     position: relative;
+    background-image: url(../img/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: 800px 100px;
 }
 
 .services-title-wrap-two {
@@ -211,27 +214,9 @@ img {
 .form{
     display: flex;
     justify-content: center;
-    padding-bottom: 210px;
     position: relative;
+    margin-bottom: 30px;
 }
-
-.map {
-    width: 700px;
-    height: 542px;
-    background-image: url(../img/Map\ Image.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    position: absolute;
-    right: 0px;
-}
-
-/* .map-img {
-    position: absolute;
-    top: 104px;
-    padding-bottom: 20px;
-    right: 0px;
-    background-repeat: no-repeat;
-} */
 
 .pers-info{
     padding: 0px;
@@ -296,13 +281,14 @@ img {
 }
 
 .down-button{
-    position: absolute;
-    top: 258px;
+    margin: 0 auto;
+    width: 250px;
 }
+
 
 .down-button input{
     border: 0px;
-    width: 150px;
+    width: 250px;
     height: 50px;
     color: #ffffff;
     background-color: #fed136;
