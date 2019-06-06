@@ -26,7 +26,7 @@ const notepad = {
      * Принимает: ничего
      * Возвращает: все заметки, значение свойства notes
      */
-    return notepad.notes;
+    return this.notes;
   },
   findNoteById(id) {
     /*
@@ -35,15 +35,7 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
      */
-    let result;
-    for( let x of notes){
-      if(notes[x].id === id){
-        result = notes[x];
-      } else { 
-        result = undefined;
-      }
-    }
-      return result;
+      return this.notes.find(note => note.id === id);
   },
   saveNote(note) {
     /*
@@ -53,7 +45,7 @@ const notepad = {
      * Возвращает: сохраненную заметку
      */
     this.notes.push(note);
-    return this.note;
+    return note;
   },
   deleteNote(id) {
     /*
@@ -61,14 +53,13 @@ const notepad = {
      *
      * Принимает: идентификатор заметки
      * Возвращает: ничего
-     */
-    // console.log(this.notes);
-    for(let x of this.notes){
-      if(x.id === id){
-        this.notes.splice(this.notes.indexOf(x),1);
+     */    
+    for(let x = 0; x < this.notes.length; x++){
+      if(this.notes[x].id === id){
+        this.notes.splice(x,1);
+        break;
       }
     }
-    
   },
   updateNoteContent(id, updatedContent) {
     /*
@@ -81,7 +72,8 @@ const notepad = {
      */
     for(let x in this.notes){
       if(x.id === id){
-        Object.assign(x,updatedContent)
+        Object.assign(x,updatedContent);
+        break;
       }
     }
   },
@@ -228,3 +220,4 @@ console.log(
  */
 notepad.deleteNote('id-2');
 console.log('Заметки после удаления с id -2: ', notepad.getNotes());
+
