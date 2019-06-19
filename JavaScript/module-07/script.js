@@ -92,10 +92,7 @@ const users = [
 // _____________1______________
 
 
-  const getAllNames = users => {
-    let arr = users.map(user => user.name)
-    return arr;     
-  };
+  const getAllNames = arr => arr.map(user => user.name);
   
   console.log(getAllNames(users));
   // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
@@ -111,10 +108,7 @@ const getUsersByEyeColor = (users, color) => {
 
   // _____________3______________
 
-  const getUsersByGender = (users, gender) => {
-    let arr = users.filter(user => user.gender = gender).map(y => y.name);
-    return arr;
-  };
+  const getUsersByGender = (users, gender) => users.filter(user => user.gender = gender).map(y => y.name);
   
   console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
@@ -129,10 +123,8 @@ const getInactiveUsers = users => {
 
 // _____________5______________
 
-const getUserByEmail = (users, email) => {
-  let arr = users.filter(user => user.email === email);
-  return arr[0];  
-};
+const getUserByEmail = (users, email) => users.find(user => user.email === email);
+
 
 console.log(getUserByEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
 console.log(getUserByEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
