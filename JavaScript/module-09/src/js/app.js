@@ -77,47 +77,41 @@ class Notepad {
 
   deleteNote (id) {
 
-    for (let x = 0; x < this._notes.length; x++) {
+    this._notes.find(x => {
       if (this._notes[x].id === id) {
         this._notes.splice(x, 1);
         break;
-      }
-    }
+    }});
   };
   updateNoteContent (id, updatedContent) {
 
-    for (let x in this._notes) {
+    this._notes.map(x => {
       if (x.id === id) {
         Object.assign(x, updatedContent);
         break;
-      }
-    }
+      } });
+    
   };
 
   updateNotePriority (id, priority) {
-
-    for (let key of this._notes) {
-      key.id === id ? key.priority = priority : null;
-    }
+    this._notes.map(key => key.id === id ? key.priority = priority : null);
   };
 
   filterNotesByQuery (query) {
 
     const arr = [];
 
-    for (let key of this._notes) {
-      key.title.toLowerCase().includes(query) || key.title.toLowerCase().includes(query) ? arr.push(key) : null
-    }
+    this._notes.map(key =>  key.title.toLowerCase().includes(query) || key.title.toLowerCase().includes(query) ? arr.push(key) : null);
     return arr
   };
 
   filterNotesByPriority (priority) {
     const arr = [];
-    for (let x of this._notes) {
+    this._notes.map(x => {
       if (x.priority === priority) {
         arr.push(x);
       }
-    }
+    });
     return arr
   }
 
@@ -236,6 +230,8 @@ renderNoteList(ul,initialNotes)
 //                                      module-9
 //====================================================================================
 
+
+//================================ UniqueID ==========================================
 const generateUniqueId = () =>
   Math.random()
     .toString(36)
@@ -243,13 +239,12 @@ const generateUniqueId = () =>
   Math.random()
     .toString(36)
     .substring(2, 15);
-
-//====================================================================================    
+//================================== Add list Item ===================================    
 function addListItem(listRef,note){
   const n = createListItem(note);
   listRef.append(n)
 }
-//=================================ADD===================================================
+//================================= ADD ==============================================
 const form = document.querySelector('.note-editor');
 const inputTitle = document.querySelector('input[name="note_title"]');
 const inputBody = document.querySelector('textarea[name="note_body"]');
@@ -283,7 +278,7 @@ function submit (event){
 
   form.reset();
   
-  
+  console.log(newNotepad);
 }
 
 
@@ -301,8 +296,11 @@ function removeListItem (){
 
   const itemForDel = event.target.closest('.note-list__item');
   itemForDel.remove();
- 
+  const idForDel = itemForDel.dataset.id 
+  newNotepad.deleteNote(idForDel);
+ console.log(newNotepad);
 }
+
 
 //============================FILTER=============================================
 
