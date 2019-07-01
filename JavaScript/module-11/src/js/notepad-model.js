@@ -46,17 +46,13 @@ export default class Notepad {
   
       const arr = [];
   
-      this._notes.map(key => key.title.toLowerCase().includes(query) || key.title.toLowerCase().includes(query) ? arr.push(key) : null);
+      this._notes.filter(key => key.title.toLowerCase().includes(query) || key.title.toLowerCase().includes(query) ? arr.push(key) : null);
       return arr
     };
   
     filterNotesByPriority(priority) {
       const arr = [];
-      this._notes.map(x => {
-        if (x.priority === priority) {
-          arr.push(x);
-        }
-      });
+      this._notes.filter(x => x.priority === priority ? arr.push(x) : none);
       return arr
     };
 
