@@ -20,22 +20,16 @@ export default class Notepad {
     };
   
     deleteNote(id) {
-  
-      this._notes.find(x => {
-        if (this._notes[x].id === id) {
-          this._notes.splice(x, 1);
-        }
-      });
+      this._notes.find(x => this._notes[x].id === id ? this._notes.splice(x, 1): none)
     };
+    
     updateNoteContent(id, updatedContent) {
-  
-      this._notes.map(x => {
+       this._notes.map(x => {
         if (x.id === id) {
           Object.assign(x, updatedContent);
-        //   break;
+          return this
         }
       });
-  
     };
   
     updateNotePriority(id, priority) {
@@ -43,7 +37,6 @@ export default class Notepad {
     };
   
     filterNotesByQuery(query) {
-  
       const arr = [];
   
       this._notes.filter(key => key.title.toLowerCase().includes(query) || key.title.toLowerCase().includes(query) ? arr.push(key) : null);
@@ -52,8 +45,8 @@ export default class Notepad {
   
     filterNotesByPriority(priority) {
       const arr = [];
+
       this._notes.filter(x => x.priority === priority ? arr.push(x) : none);
       return arr
     };
-
 }
